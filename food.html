@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Order</title>
+    <style>
+        body {
+		background-colour:#CD5C5C
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fc8019;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .website-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .website-image {
+            width: 150px; /* Decreased image size */
+            height: auto;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .website-details {
+            width: 48%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-size: 18px; /* Increased font size */
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <h1>Online Food Order</h1>
+    </header>
+    <section>
+        <p>Welcome to our online food ordering platform!</p>
+        <p>Choose from the following restaurants:</p>
+   
+        <div class="website-container">
+            <div class="website-details">
+                <img class="website-image" src="https://images.tristatetechnology.com/blog-images/uploads/2019/10/swiggy-food-delivery-1.jpg" alt="Swiggy" onclick="showWebsite('https://www.swiggy.com')">
+<li>1. Swiggy</li>
+            </div>
+            <div class="website-details">
+                <img class="website-image" src="https://couponswala.com/blog/wp-content/uploads/2020/07/zomato-online-order.jpg.webp" alt="Zomato" onclick="showWebsite('https://www.zomato.com')">
+<li>2. Zomato</li>
+            </div>
+            <div class="website-details">
+                <img class="website-image" src="https://i.insider.com/5f36e068e89ebf001f044cc1?width=1000&format=jpeg&auto=webpg" alt="Uber Eats" onclick="showWebsite('https://www.ubereats.com')">
+<li>3. Uber Eats</li>
+            </div>
+            <div class="website-details">
+                <img class="website-image" src="https://i0.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/10/doordash-software-engineering-daily-1.png?resize=730%2C389&ssl=1" alt="DoorDash" onclick="showWebsite('https://www.doordash.com')">
+            <li>4. DoorDash</li>
+ </div>
+            <div class="website-details">
+ <img class="website-image" src="https://play-lh.googleusercontent.com/2aSEyMxSUQVknFM5lkmbxv0LhJZvSkwotA-jtlqJSjplXl4_BszCW9_FzzqPBpEeoPE" alt="Grubhub" onclick="showWebsite('https://www.grubhub.com')">
+ <li>5. Grubhub</li>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showWebsite(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
